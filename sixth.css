@@ -1,0 +1,19 @@
+.btn{
+    border: none;   /* for border remove */
+    cursor: pointer;  /* For click button cursor is showing , Different types of cursor select. */
+}
+a{
+    /* text-decoration: none;  We use this to remove line here */
+    text-decoration: dotted;  /* Format of text to convert Line of decoration */
+}
+a:hover{  /* hovering to click */
+    color: aqua;
+    background-color: blue;
+}
+a:visited{ /* After visiting shows this colour */
+    background-color: red;
+}
+a:active{  /* to click then colour is changed to clicking time */
+    background-color: blueviolet;
+}
+/* List style(li) : none  it will be romove dots in li tags.*/

@@ -1,0 +1,7 @@
+p{
+    font-size: 33px;  /* Increase Font Size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Given a font  */
+    line-height: 10rem;  /* Upper to give height,rem is Root element */
+    font-weight: 100; /* Things To be get a dark font to Light font */
+    font-style: italic;  /* give style to text */
+}

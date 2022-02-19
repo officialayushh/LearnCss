@@ -1,0 +1,4 @@
+/*  External Css */
+.container{
+    color: aqua;  /*Internal or external both css is used to give first any class or id and select this. */
+}

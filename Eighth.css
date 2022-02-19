@@ -1,0 +1,54 @@
+   /* z-index & Visibility */
+        /* visibility hidden after this element is hidden but it space will be consumed. */
+        /* Z-index largest z-index size if position will give relative & top then z-index largest size will cover this. */
+        .container{
+            border: 2px solid red;
+            height: 544px;
+            background-color: khaki;
+            width: 100%;
+            display: flex;  /* Display flex and make box is required to apply flex properties. */
+            /* flex-direction: row-reverse; Flex properties have over-righted values  */
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row; */
+            /* wrap in flex is used as responsive design to automatically wrap according to responsiveness */
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+            flex-flow: row wrap; /* Directly Selected all to this direction and wrap both, */
+            justify-content: center; /* For center particular things */
+            justify-content: space-between;  /* First and last leave boxes all boxes have equal distance automatically arranged, */
+            justify-content: space-around;   /* Both boxes spaces have been placed this box. */
+            justify-content: space-evenly;  /* For all boxes equal spacing give  */
+            align-items: center;  /* Controlling midddle items and more properties apply Here */
+            /* align-items: stretch; Automatically Stretched if we control its width downside*/
+        }
+        .box{
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+        /* Flex properties for a flex item */
+        #box1{
+        /* Higher the order, later it shows up in the container */
+            order: 4;
+        /* Higher the gorwing rate get more place to other */
+            flex-grow: 2; 
+        }
+        #box2{
+            flex-basis: 160px;
+            /* if{
+                when flex-direction is set to row flex-basis: will control width
+            }else{
+                when flex-direction is set to column flex-basis: will control height
+            } */
+        }
+        #box3{ 
+            /* For particular box handling and use flex properties here to goodly. */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }

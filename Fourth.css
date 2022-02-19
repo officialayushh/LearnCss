@@ -1,0 +1,19 @@
+*{  /* This is Universal apply for all things and all elements */
+    box-sizing: border-box;  /* Width & All no body set without ovewrite this. */
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    /*  Also give margin,border,padding to top,left,right,bottom,etc..*/
+    /* margin: auto; /*Use this to Center*/
+    /* margin: 100px;
+    padding: 100px;*/
+    border: 3px solid green;
+    /* For margin,padding of both sides we use Top,Right,Bottom,Left */
+    margin: 100px 100px 100px 100px;
+    padding: 100px 100px 100px 100px;
+    /* For selecting particular Two Sides */
+    /* y(Top,Bottom)x(Left,right) */
+    padding: 23px 98px; /* Here Y & X */
+    margin: auto;/*  This will give equal margin of left and right side */
+}

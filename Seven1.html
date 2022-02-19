@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position </title>
+    <style>
+/* static
+   relative
+   absolute
+   fixed
+   sticky */
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box{
+        display: inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+        text-align: center;
+        }
+    #box3{
+        position: relative; /* For give this you can handle particular box to your wish how you will be handle like this. */
+        top: 130px;   /* Also Give Gap this Syntax , Only use for gap also not get any position.*/
+        left: 162px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">HTML</div>
+        <div class="box" id="box2">CSS</div>
+        <div class="box" id="box3">JS</div>
+        <div class="box" id="box4">REACT</div>
+    </div>
+</body>
+</html>

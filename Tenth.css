@@ -1,0 +1,34 @@
+        /* Any container want center then block display and set width & its margin */
+        input[type='text']{   /* pseudo selector to target particular attribute we can select this */
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target] {
+            font-size: 44px;
+            color: violet;
+        }
+
+        a[target='_self'] {
+            font-size: 14px;
+            color: rgb(13, 22, 151);
+        }
+
+        input[type='email'] {
+            color: yellow;
+            border: 4px solid black;
+        }
+        li:nth-child(2){  /* Target Specific line that will be we given that, */
+            color: green;
+        }
+        li:nth-child(2n+0){  /* Target every secoond element becz it will be run how much of element have so,2(1)+0=2, Every 2 will be target. */
+            background-color: blue;
+        }
+        li:nth-child(3n+3){
+            background-color: aqua;
+        }
+        li:nth-child(odd){
+            background-color: grey;
+        }
+        li:nth-child(even){
+            background-color: pink;
+        }

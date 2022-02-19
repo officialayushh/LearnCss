@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design & Media query</title>
+    <!-- <link rel="stylesheet" href="Nine.css"> -->
+    <style>
+        /* Inline Css Used Here */
+        .box{
+            color: blue;
+            background-color: red;
+            text-align: center;
+            font-size: 72px;
+            display: none;
+        }
+
+        /* For use responsieness and //only screen and// also use or not your choice */
+
+        @media only screen and (max-width:500px){
+            #box1{
+                display: block;
+                color: blue;
+                background-color: orange;
+            }
+        }
+        @media (min-width: 500px) and (max-width:800px){
+            #box2{
+                display: block;
+                color: khaki;
+                background-color: tomato;
+            }
+        }
+        @media (min-width: 800px) and (max-width:1200px){
+            #box3{
+                display: block;
+                color: gray;
+                background-color: green;
+            }
+        }
+        @media (min-width: 1200px){
+            #box4{
+                display: block;
+                color: yellow;
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="box" id="box1">HTML</div>
+        <div class="box" id="box2">CSS</div>
+        <div class="box" id="box3">JS</div>
+        <div class="box" id="box4">REACT</div>
+</body>
+</html>

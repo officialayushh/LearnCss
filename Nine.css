@@ -1,0 +1,25 @@
+/* We use this according to requirement parent size depend or not both em and rem tag. */
+html{
+    font-size: 25px;
+}
+.container{
+    width:400px;
+    /* height: 344px; */
+    height: 100vh;  /* view height & view width full place cover that its requirement */
+    width: 100vw;
+    font-size: 10px;
+    border :2px solid red;
+}
+h1{
+text-align: center;
+}
+#first{
+/* font-size: 3em;  /* font size get compulsory to give an element to using em tag so in container font size give that multiples. */
+/* padding: 3em;  */  /* For padding em tag is used to get 3x of font size. */
+
+}
+#second{
+/* font-size: 3rem; /* rem tag is resize self according to root element, Here root element is html make also padiing as same mutiples */
+/* padding: 3rem; */
+
+}

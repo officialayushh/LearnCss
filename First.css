@@ -1,0 +1,27 @@
+/* CSS element Selector  */
+p{
+    color: aqua;
+}
+/* CSS id Selector */
+#example{
+    background-color: blue;
+}
+/* CSS Class Selector */
+.exa{
+    align-items: center;
+}
+/* CSS grouping selector */
+h3,p{
+    background-color: aliceblue;
+}
+
+
+div p{  /* Inside div every p was selected */
+    background-color: green;
+}
+div > p{   /* Inside div directly of p selected only */
+    background-color: yellowgreen;
+}
+div + p{    /* after div p tag come all was selected to this */
+    background-color: red;
+}

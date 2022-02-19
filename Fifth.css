@@ -1,0 +1,11 @@
+h1{
+    float: left;
+    /* float: none;  Here Not Floating will be used to do this */
+}
+h2{
+    float: right;
+    clear: left; /*  Clear will be used to remove floating only not other things. */
+}
+h3{
+    text-align: right; /*  For only particular text */
+}

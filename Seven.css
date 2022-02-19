@@ -1,0 +1,33 @@
+  /* For blocking Display and give margin auto to take things centr also that is an logic not a very big thing. */
+  h1{
+    display: block;  /* block means full display block like html tag inline and block display */
+    display: inline;  /* Inline means that needs this requirement of place its get. */
+    display: none;   /* The element will be hidden, and the page will be displayed as if the element is not there */
+    display: inline-block;  /* use this to condition inline and block both want*/
+    box-sizing: border-box;  /* If we want display inline-block width dont be finished for margin & padding then we use it, */
+  }
+
+          /* Static & Sticky Position */
+/* static
+   relative
+   absolute
+   fixed
+   sticky */
+   .container{
+    border: 2px solid black;
+    background-color: khaki;
+    height: 3444px;
+}
+.box{
+display: inline-block;
+border: 2px solid red;
+width: 150px;
+height: 150px;
+margin: 2px;
+text-align: center;
+}
+#box3{
+position: static; /* Same position not other thing handled.  */
+position: sticky;  /* Sticky & top will be used as position to element fix after scroll showing one place. */
+top: 3px;
+}
