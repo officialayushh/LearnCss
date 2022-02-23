@@ -1,0 +1,47 @@
+        /* section::before{ */
+             /* content: "Ayush is this side";  Showing before section */
+        /* } */
+        /* section::after{ */
+            /* content: "After all content is showing there";  Showing after section */
+        /* }  */
+        body {
+            /* For whole body */
+            margin: 0;   /* For facility of viewance good we use this */
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        body::before{  
+            /* for body or any cojunction use this any single particular element.*/
+            background: url(nature.jpg) no-repeat center center/cover;
+            position: absolute;  /* position absolute learn that top and left is compulsory */
+            top: 0;
+            left: 0;
+            width: 100%;   /* width and height is compulsory to give */
+            height: 100%;
+            content: "";  /* Without give this doesn't work pseudo selectros property */
+            z-index: -1;  /* z-index only works with positional properties */
+            opacity: 0.5;  /* for light and dark anything you want that. */
+        }
+        section{
+            height: 344px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Dont do big work here only apply flex properties */
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .navbar{
+            background-color: black;
+            border-radius: 84px;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+            float: left;
+        }

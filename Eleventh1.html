@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow & Sizing</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            border: 2px solid red;
+            padding: 52px 143px;
+            margin: 34px;
+            background-color: aqua;
+            box-shadow: 8px 7px 9px 10px red;  /* first x for left,right and y for top,bottom and here z is working as blur radius.and last point is spread radius that will be define as how much you want to disseminate */
+            box-shadow: -8px -7px red;
+            box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5);  /* Allare rgb colour but here a is alfa than can be decide colour opacity as like to say that */
+            box-shadow: 3px 5px green, 4px 6px red;  /* For multicolour select multiple shadows */
+            box-shadow: inset 3px 5px green;  /* fOR inside use this  */
+            /* text-shadow: ;  Give this for particular text shadow also */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">Card-1</div>
+        <div class="card" id="card-2">card-2</div>
+        <div class="card" id="card-3">card-3</div>
+    </div>
+</body>
+</html>
