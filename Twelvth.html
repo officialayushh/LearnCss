@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables/Custom Properties or Animation & KeyWords</title>
+    <!-- <link rel="stylesheet" href="Twelvth.css"> -->
+    <style>
+      .container{
+          background-color: aqua;
+      }
+      .box{
+        background-color: greenyellow;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: tryal;
+        animation-name: styling;
+        animation-duration: 1s;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards; /* For auto end up in last and alternate is start in last auto come. */
+        /* animation-fill-mode: alternate; By default this was available alredy*/
+        animation-timing-function: ease-in;  /* In starting go slow and after going fast */
+        animation-timing-function: ease-out; /* In starting going fast and after slow */
+        animation-timing-function: ease-in-out; /* slow,fast,slow */
+        animation-delay: 3s; /* After this particular time start that */
+        animation-direction: alternate;
+        animation-direction: reverse;
+        /* Also use this to shortend method */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+      }
+      @keyframes styling {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+        
+    }
+      @keyframes tryal {
+          from{
+              width: 200px;
+          }
+      to{
+          width:1400px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div> -->
+    <div class="container">
+        <div class="box">Box-1</div>
+    </div>
+</body>
+</html>
