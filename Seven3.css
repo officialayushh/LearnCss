@@ -1,0 +1,22 @@
+/* static
+   relative
+   absolute
+   fixed
+   sticky */
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box{
+        display: inline-block;
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+        text-align: center;
+        }
+    #box3{
+        position: fixed; /* Any Particular place we will give its position then fixed here after scroll also. */
+        right: 23px;
+        }
