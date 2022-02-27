@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmission and Transform property in CSS</title>
+    <!-- <link rel="stylesheet" href="Thirteenth.css"> -->
+    <style>
+      /* Transform property is particular work as to rotate an box any direction or styling */
+      *{
+          margin: 0px;
+          padding: 0px;
+      }
+      .container{
+          height: 80vh;
+          display: flex;
+          background-color: aqua;
+          justify-content: center;
+          align-items: center;
+      }
+      #box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: brown;
+          border: 2px solid black;
+          border-radius: 8px;
+          height: 200px;
+          width: 200px;
+          transition: all 0.5s ease-in-out;
+      }
+      #box:hover{
+          /* transform: rotate(45deg); For partiular box styling*/
+          /* transform: skew(40deg); particular move in one side fully*/
+          /* transform: scale(2); for sizing increase or decrease to hover*/
+          /* transform: translatex(123px); for box sliding*/
+          /* transform: translateY(123px); */
+          transform: translate(123px, 123px);   
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+#box{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    /* Transition property is mainly to be like that as animation property */
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+    /* For particular single line give this. */
+    /* transition: background-color 1s ease-in-out .3s; */
+    transition: all 1s ease-in-out .3s; /* Other things also we need that to define then we use this. */
+}
+#box:hover{
+    background-color: green;
+    height: 400px;
+    width: 400px;
+    border-radius: 100px;
+    font-size: 80px;
+}
