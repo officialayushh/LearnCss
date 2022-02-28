@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: 112px 112px 112px;
+    justify-content: center; */
+    /* Autofit And min-max : Autifit is arrange all elements self accordingly,and we give min-max size of main screen also.*/
+    /* Also use this as responsiveness. */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.items{
+    border: 2px solid black;
+    background-color: aqua;
+    padding: 23px;
+}

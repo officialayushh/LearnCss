@@ -1,0 +1,96 @@
+/* With the help of CSS grid using media queries we make an file. */
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer ';
+}
+
+@media only screen and (max-width:300px) {
+    body {
+        background-color: red;
+    }
+    .container {
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+    }
+    aside{
+        display: none;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:500px) {
+    body {
+        background-color: blue;
+    }
+    .container {
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+    }
+    aside{
+        display: none;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 500px) and (max-width:800px) {
+    body {
+        background-color: yellow;
+    }
+
+    .container {
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-color: green;
+    }
+}
+
+.bdr {
+    border: 2px solid black;
+    padding: 10px 23px;
+    background-color: wheat;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}

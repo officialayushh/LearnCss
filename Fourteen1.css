@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-auto-rows: 3fr; /*Whose you dont say above it will be set automatically. */
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 2fr);
+}
+.items{
+    background-color: red;
+    border: 2px solid black;
+}

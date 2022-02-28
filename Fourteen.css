@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    /* All grid column working is same but define of method is different of all. */
+    /* grid-template-columns: 300px 100px 100px; For width it will consume */
+    /* grid-template-columns: 200px auto auto; For automatic adjust step */
+    /* grid-template-columns: 1fr 4fr 1fr; That is how much width will consumed inside.Divide rows into fraction */
+     grid-template-columns: repeat(4, auto); /* Auto selecting more things as well as, */
+    grid-gap: 2rem; /* Gap in between grid */
+}
+.items{
+    /* height: 100px;
+    width: 100px; */
+    background-color: red;
+    margin: 3px;
+    border: 2px solid black;
+    padding: 15px 5px;
+}

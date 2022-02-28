@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: /* For defining Particular Areas */
+    'navbar navbar navbar navbar' 
+    'section section section aside'
+    'footer footer footer footer ';
+}
+.item{
+    background-color: yellow;
+    border: 3px solid black;
+    padding: 12px 23px;
+}
+/* As a particular area select and thinga is work as which pupose its work that type.  */
+#navbar{
+    grid-area: navbar;
+}
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
